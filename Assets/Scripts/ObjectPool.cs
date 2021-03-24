@@ -19,7 +19,7 @@ public class ObjectPool : MonoBehaviour
     {
         pooledObjects = new List<GameObject>();
         GameObject tmp;
-        for (int i = 0; 1 < amountToPool; i++)
+        for (int i = 0; i< amountToPool; i++)
         {
             tmp = Instantiate(objectToPool);
             tmp.SetActive(false);

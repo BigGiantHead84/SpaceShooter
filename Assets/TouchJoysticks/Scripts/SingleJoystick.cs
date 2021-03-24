@@ -57,12 +57,14 @@ public class SingleJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
             //bgImage.rectTransform.anchorMin = new Vector2(0, 0); // sets the min anchors to the lower left corner of the canvas
             //bgImage.rectTransform.anchorMax = new Vector2(0, 0); // sets the max anchors to the lower left corner of the canvas
             bgImage.rectTransform.position = bgImageStartPosition; // sets the background image of this joystick back to the same position it was on the canvas before play was pressed
+            
         }
      }
 
     // this event happens when there is a drag on screen
     public virtual void OnDrag(PointerEventData ped)
     {
+     
         Vector2 localPoint = Vector2.zero; // resets the localPoint out parameter of the RectTransformUtility.ScreenPointToLocalPointInRectangle function on each drag event
 
         // if the point touched on the screen is within the background image of this joystick
